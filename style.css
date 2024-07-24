@@ -1,0 +1,702 @@
+/* Default code Starts here */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f0f8ff;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #be9c79;
+    --secondaryColor: #660600;
+    --darkColor: #000000;
+    --lightColor: #ffffff;
+    --regularFont: 1.6rem;
+    --headingFont: 54px;
+    --ffPrimary: "Nunito", sans-serif;
+    --ffSecondary: "Merienda", cursive;
+    --netflixredHover: #c10e17;
+    --redcolor: #e50914;
+    --greycolor: #2e2c2c;
+    --borderGrey: #585656;
+    --greycolorHover: #5a5a5a;
+}
+
+/* Default code Ends here */
+
+/* project standard classes Starts */
+
+
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dflex-colstart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.align {
+    max-width: 1200 px;
+    margin: auto;
+    padding: 0 17rem;
+}
+
+.cspacing {
+    padding: 7rem 0;
+
+}
+
+/* project standard classs Ends */
+/* parent container code starts here */
+header {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(./assets/images/IMG_20240714_223307.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--darkColor);
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--darkColor);
+}
+
+/* parent container code ends here */
+/* common codes */
+h2 {
+    font-size: 4.999rem;
+    font-weight: 800;
+    color: var(--lightColor);
+    ;
+}
+
+p {
+    color: var(--lightColor);
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+li {
+    color: var(--lightColor);
+}
+
+button {
+    border-radius: 0.3rem;
+}
+
+/* common codes */
+/* header code starts here */
+/* navbar code starts here */
+.navContainer {
+    /* background-color: #330300; */
+    /* padding-bottom : 9rem; */
+
+}
+
+.navBar {
+    /* background-color: #ce483f; */
+    margin-bottom: 0rem;
+}
+
+.navBody {
+    /* background-color: #d36159; */
+}
+
+.navLogo {
+    /* background-color: #af5750; */
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navLogo img {
+    /* background-color: #aa8a4e; */
+    /* margin-bottom: 2rem; */
+    width: 32%;
+    aspect-ratio: 16/9;
+
+
+
+}
+
+.navJumbotron {
+    /* background-color: #222121; */
+    /* padding:5rem; */
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navJumbotron button {
+    /* background-color: #c0a19ff6; */
+    margin: 1.4rem;
+    padding: 0.3rem 1rem;
+    background-color: transparent;
+    font-size: 1.6rem;
+    font-weight: normal;
+    border: 0.01rem solid var(--borderGrey);
+}
+
+/* .navJumbotron button */
+
+
+
+.navJumbotron button i {
+    font-size: 1rem;
+    color: var(--lightColor);
+    margin: 0.4rem 0.7rem;
+}
+.signIn {
+    /* background-color: #ec1d0e; */
+
+
+
+
+}
+.signIn button {
+    background-color: var(--redcolor);
+    border: none;
+    padding: 0.5rem 1.2rem;
+
+}
+
+.signIn button:hover {
+    background-color: var(--netflixredHover);
+}
+
+
+.heroContainer {
+    /* background-color: #222121; */
+    /* margin-bottom: 1rem; */
+    /* padding: 4rem 0; */
+    border-bottom: 0.8rem solid var(--greycolor);
+    padding: 7.2rem 0 13rem;
+
+}
+
+.heroSection {
+    /* background-color: #222121; */
+    /* margin-bottom: 1rem; */
+
+}
+
+.heroBody {
+    /* background-color: #cb2115; */
+
+
+}
+
+.heroJumbotron {
+    /* background-color: #222121; */
+    margin: 4rem 0 2rem;
+}
+
+.heroJumbotron h1 {
+    /* background-color: #bcca41; */
+    margin-bottom: 1.2rem;
+    font-size: 5.12rem;
+    font-weight: 900;
+    color: var(--lightColor);
+}
+
+.heroJumbotron h4 {
+    /* background-color: #bda8a8; */
+    margin-bottom: 0.8rem;
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: var(--lightColor);
+
+}
+
+.heroJumbotron p {
+    /* background-color: #5aecec; */
+
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--lightColor);
+}
+
+.heroButtons {
+    /* background-color: #e7f3c4; */
+    margin: 0rem;
+}
+
+
+
+
+
+.heroButtons button {
+    /* background-color: #db4d4d; */
+    margin: 0.7rem;
+    padding: 1.5rem;
+    background-color: var(--redcolor);
+    font-size: 2.4rem;
+    font-weight: 500;
+    border: none;
+
+}
+.emailBox{
+/* background-color: aqua; */
+}
+.emailBox input{
+    background-color: transparent;
+    padding: 1.9rem 20rem 1.9rem 1rem;
+    font-size: 1.59rem;
+    font-weight: 400;
+    color: var(--lightColor);
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    border: 0.01rem solid var(--borderGrey);
+    border-radius: 0.4rem;
+    /* font-size: 2rem;
+    font-weight: 400; */
+}
+    
+
+
+
+.heroButtons i {
+    /* background-color: #585656; */
+    font-size: 1.9rem;
+}
+
+.start:hover {
+    background-color: var(--netflixredHover);
+}
+
+
+
+
+/* hero code ends */
+/* tv code */
+.tvContainer {
+    /* background-color: #9fb950; */
+    border-bottom: 0.8rem solid var(--greycolor);
+}
+
+.tv {
+    /* background-color: #c3f138; */
+
+}
+
+.tvBody {
+    /* background-color: #5d19db; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tvJumbotron {
+    /* background-color: #52534d; */
+
+}
+
+.tvJumbotron h2 {
+    /* background-color: #e61616; */
+
+}
+
+.tvJumbotron p {
+    /* background-color: #17b87a; */
+
+}
+
+.tvImage {
+    /* background-color: #9a59e4; */
+
+}
+
+.tvImage img {
+    /* background-color: #0a0a0a; */
+
+}
+
+/* tv code ends */
+/* download codes */
+.downloadContainer {
+    /* background-color: #e7f3c4; */
+    border-bottom: 0.8rem solid var(--greycolor);
+}
+
+.download {
+    /* background-color: #191a16; */
+
+}
+
+.downloadBody {
+    /* background-color: #365729; */
+
+}
+
+.dowmloadImage {
+    /* background-color: #e7f3c4; */
+
+}
+
+.dowmloadImage img {
+    /* background-color: #c75064; */
+
+}
+
+.downloadJumbotron {
+    /* background-color: #dfa914; */
+
+}
+
+.downloadJumbotron h2 {
+    /* background-color: #c51c38; */
+
+}
+
+.downloadJumbotron p {
+    /* background-color: #804252; */
+
+}
+
+/* download code ends */
+/* watch code */
+.watchContainer {
+    /* background-color: #e7f3c4; */
+    border-bottom: 0.8rem solid var(--greycolor);
+}
+
+.watch {
+    /* background-color: #e7f3c4; */
+
+}
+
+.watchBody {
+    /* background-color: #12aa78; */
+
+}
+
+.watchJumbotron {
+    /* background-color: #e7f3c4; */
+
+}
+
+.watchJumbotron h2 {
+    /* background-color: #14cfc0; */
+
+}
+
+.watchJumbotron p {
+    /* background-color: #3accb8; */
+
+}
+
+.watchImage {
+    /* background-color: #bd2da5; */
+
+}
+
+.watchImage img {
+    /* background-color: #1c7ec0; */
+
+}
+
+/* watch code ends */
+/* kid code starts */
+.kidsContainer {
+
+    /* background-color: #e7f3c4; */
+    border-bottom: 0.8rem solid var(--greycolor);
+}
+
+
+.kids {
+    /* background-color: #3a26eb; */
+
+}
+
+.kidBody {
+    /* background-color: #20270b; */
+
+}
+
+.kidImage {
+    /* background-color: #e7f3c4; */
+
+}
+
+.KidImage img {
+    /* background-color: #565558; */
+
+}
+
+.kidJumbotron {
+    /* background-color: #b637d6; */
+
+}
+
+.kidJumbotron h2 {
+    /* background-color: #8b396c; */
+
+}
+
+.kidJumbotron p {
+    /* background-color: #25ac59; */
+
+}
+
+/* kid code ends */
+
+/* Main code ends here */
+/* fo0ter code starts here */
+/* faq code */
+.faqConainer {
+    /* background-color: #26291d; */
+    border-bottom: 0.8rem solid var(--greycolor);
+}
+
+.faq {
+    /* background-color: #d11db9; */
+
+}
+
+.faqHeadingBody {
+    /* background-color: #baf704; */
+
+}
+
+.faqHeadingBody h2 {
+    /* background-color: #e7f3c4; */
+
+}
+
+.faqBody {
+    /* background-color: #09442e; */
+    padding: 1rem 0rem 2rem;
+}
+
+.faqBody button {
+    /* background-color: #8bd2e4; */
+    font-size: 2.4rem;
+    margin: 0.3rem 0 0.7rem 0;
+    /* padding: 2rem 2rem; */
+    background-color: var(--greycolor);
+    list-style-type: none;
+    border: none;
+    text-align: start;
+    padding: 1.8rem;
+
+}
+.faqBody button a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqBody i {
+    /* margin-left: 70rem; */
+   font-size: 4rem;
+    font-weight: 100;
+}
+.faqBody button:hover{
+    background-color: var(--greycolorHover);
+}
+
+.faqBottomBody {
+    /* background-color: #b0df25; */
+    padding: 2rem;
+}
+
+.faqText {
+    /* background-color: #e7f3c4; */
+}
+
+.faqText h3 {
+    /* background-color: #be2fe2; */
+    font-size: 1.8rem;
+    color: var(--lightColor);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.faqButtons {
+    /* background-color: #15f572; */
+
+}
+
+.faqButtons button {
+    /* background-color: #523f94; */
+    margin: 0.7rem;
+    padding: 1.5rem;
+    background-color: var(--redcolor);
+    font-size: 2.4rem;
+    font-weight: 500;
+    border: none;
+
+}
+
+  
+
+.faqButtons i {
+    font-size: 1.9rem;
+    /* font-weight: 300; */
+}
+
+/* faq code ends */
+/* contact code */
+
+.contactContainer {
+    /* background-color: #4ec254; */
+    padding: 7.9rem 3rem;
+}
+
+.contact {
+    /* background-color: #08752c; */
+}
+
+.contactBody {
+    /* background-color: #76980e; */
+    margin: 1rem 0 1rem 14rem;
+}
+
+.contactList {
+    /* background-color: #3559cf; */
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.contactList li {
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contactList li a {
+    /* background-color: #ee0e19; */
+
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contactNetflixbody {
+    /* background-color: #000000; */
+    margin: 1rem 0 1rem 14rem;
+}
+
+.contactNetflix {
+    /* background-color: #ba6dec; */
+}
+
+.contactNetflixbody button {
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: 0.1rem solid var(--borderGrey);
+    padding: 0.5rem 1rem;
+    color: rgba(255, 255, 255, 0.7);
+
+
+}
+
+.contactNetflixbody p {
+    /* background-color: #e7f3c4; */
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+
+
+}
+
+/* contact */
+
+/* footer code ends here */
